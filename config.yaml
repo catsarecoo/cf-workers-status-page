@@ -1,7 +1,7 @@
 settings:
   title: 'Deepcord Status'
   url: 'https://status.deepcord.ml' # used for Slack messages
-  logo: logo-192x192.png # image in ./public/ folder
+  logo: ff32cdd5af4fc7b1742b4d0c0d57e0a7.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
 
