@@ -7,7 +7,7 @@ settings:
 
   allmonitorsOperational: 'All Systems Operational'
   notAllmonitorsOperational: 'Not All Systems Operational'
-  monitorLabelOperational: 'Opertaional'
+  monitorLabelOperational: 'Operational'
   monitorLabelNotOperational: 'Active Incident'
   monitorLabelNoData: 'No data'
   dayInHistogramNoData: 'No data'
