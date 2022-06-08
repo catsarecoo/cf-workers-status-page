@@ -6,7 +6,7 @@ settings:
   collectResponseTimes: true # collects avg response times from CRON locations
 
   allmonitorsOperational: 'All Systems Operational'
-  notAllmonitorsOperational: 'Active Incident
+  notAllmonitorsOperational: 'Active Incident'
   monitorLabelOperational: 'Operational'
   monitorLabelNotOperational: 'Not Operational'
   monitorLabelNoData: 'No data'
@@ -17,19 +17,24 @@ settings:
 monitors:
   - id: deepcord.ml # unique identifier
     name: Website
-    description: 'The main website' # default=empty
+    description: 'The main Deepcord website' # default=empty
     url: 'https://deepcord.ml' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
-   - id: dev.fosscord.com # unique identifier
+
+  - id: status.deepcord.ml
+    name: Deepcord Status
+    description: 'The Deepcord Status (basically this xd)'
+    url: 'https://www.cloudflare.com'
+    method: GET
+    expectStatus: 200
+    linkable: true # allows the title to be a link, default=true
+
+  - id: dev.fosscord.com
     name: Fosscord
-    description: 'Demo Fosscord Instance' # default=empty
-    url: 'https://dev.fosscord.com' # URL to fetch
-    method: GET # default=GET
-    expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
-    linkable: false # allows the title to be a link, default=true
-
-
+    description: 'Fosscord dev instance'
+    url: 'dev.fosscord.com'
+    method: GET
+    expectStatus: 200
