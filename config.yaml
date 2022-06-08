@@ -1,6 +1,6 @@
 settings:
   title: 'Deepcord Status'
-  url: 'https://status-page.eidam.dev' # used for Slack messages
+  url: 'https://status.deepcord.ml' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
@@ -23,4 +23,13 @@ monitors:
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
+   - id: dev.fosscord.com # unique identifier
+    name: Fosscord
+    description: 'Demo Fosscord Instance' # default=empty
+    url: 'https://dev.fosscord.com' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: false # allows the title to be a link, default=true
+
 
